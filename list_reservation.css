@@ -1,0 +1,63 @@
+/* Style de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1{
+   text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.upp-button {
+    background-color: #04AA6D;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.upp-button:hover {
+    background-color: #0056b3;
+}
+
+/* Modifier la couleur du lien lors du survol */
+.upp-button a:hover {
+    color: #e7e7e7;
+    text-decoration: none;
+}
+dell-button{
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
