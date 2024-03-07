@@ -50,5 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } catch(PDOException $e){
         echo "Connexion à la base de données échouée : " .$e->getMessage();
     }
+
+    $rootUrl = "http://localhost:81/tuto/g_billet/";
+    header('Location: ' .$rootUrl . 'list_reservation.php'); 
 }
 ?>

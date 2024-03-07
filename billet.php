@@ -23,17 +23,23 @@ $stmt->execute();
 <body>
     <?php require_once(__DIR__ . '/header.php'); ?>
     <div class="container">
-        <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
+    <?php while ($row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
             <div class='card'>
                 <img src="<?= $row['image'] ?>" alt="">
                 <div class="card-body">
                     <p><?= $row['detaille']; ?></p>
                     <p><b>prix :</b><?= $row['prix']; ?></p>
                     <p><b>Date de départ :</b> <?= $row['date']; ?></p>
-                    <button><a href="billet_update.php?id=<?php echo $row['id']; ?>">Modifier</a></button>
-                    <button><a href='billet_delete.php?id=<?php echo $row['id'];?>'>Supprimer</a></button>
-                </div>
+            <div class="button">
+     <div class="button-1">
+            <button><a href="billet_update.php?id=<?php echo $row['id']; ?>">Modifier</a></button>
+        </div>
+        <div class="button-2">
+                <button><a href="billet_delete.php?id=<?php echo $row['id']; ?>">Supprimer</a></button>
+        </div>
+        </div>
             </div>
+    </div>
         <?php endwhile; ?>
     </div>
 </body>
